@@ -1,0 +1,5 @@
+body { font-family: system-ui, sans-serif; padding: 24px; }
+.container { max-width: 720px; margin: 0 auto; }
+label { display: block; margin-top: 12px; }
+input, select { width: 100%; padding: 8px; margin-top: 4px; }
+.error { color: red; font-size: 0.9rem; }
