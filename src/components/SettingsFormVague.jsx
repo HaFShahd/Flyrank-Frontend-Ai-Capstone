@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function SettingsFormVague() {
-  // Very simple, lazy implementation (one-sentence prompt style)
+  // Very simple, lazy implementation
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
