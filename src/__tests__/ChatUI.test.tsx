@@ -14,5 +14,5 @@ test('chat flow displays bot reply', async () => {
   fireEvent.change(input, { target: { value: 'How to apply for Punjab Kissan Support' } })
   fireEvent.click(screen.getByRole('button', { name: /send/i }))
 
-  expect(await screen.findByText(/Procedure: step1/i)).toBeInTheDocument()
+  expect(await screen.findByText(/Procedure: step1/i)).toBeTruthy()
 })

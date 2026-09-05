@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { test, vi, expect } from 'vitest'
-import '@testing-library/jest-dom'
 import SettingsFormPrecise from './SettingsFormPrecise'
 
 test('shows validation errors and submits valid data', async () => {
@@ -11,9 +10,9 @@ test('shows validation errors and submits valid data', async () => {
   // Submit without filling fields
   fireEvent.click(screen.getByRole('button', { name: /save settings/i }))
 
-  expect(await screen.findByText(/Username must be at least 3 characters/i)).toBeInTheDocument()
-  expect(await screen.findByText(/Invalid email address/i)).toBeInTheDocument()
-  expect(await screen.findByText(/Timezone is required/i)).toBeInTheDocument()
+  expect(await screen.findByText(/Username must be at least 3 characters/i)).toBeTruthy()
+  expect(await screen.findByText(/Invalid email address/i)).toBeTruthy()
+  expect(await screen.findByText(/Timezone is required/i)).toBeTruthy()
 
   // Fill with valid inputs
   fireEvent.change(screen.getByLabelText(/username/i), { target: { value: 'Alice' } })
