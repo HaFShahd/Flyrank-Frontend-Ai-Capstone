@@ -1,0 +1,27 @@
+[
+  {
+    "id": "punjab-kissan-support",
+    "name": "Punjab Kissan Support",
+    "summary": "Smallholder subsidy for fertilizer and seeds in Punjab.",
+    "steps": [
+      "Check eligibility: land ownership or tenancy documents.",
+      "Gather CNIC and farm registration documents.",
+      "Visit the local agriculture extension office or designated portal.",
+      "Fill the subsidy application form and attach required documents.",
+      "Submit application and keep the submission receipt number.",
+      "Follow up with the extension office for approval and disbursement steps."
+    ]
+  },
+  {
+    "id": "national-kissan-package",
+    "name": "National Kissan Package",
+    "summary": "Federal-level assistance for mechanization and training.",
+    "steps": [
+      "Review program eligibility on the official ministry website.",
+      "Prepare CNIC, proof of residence, and farm details.",
+      "Apply online via the ministry portal or through field offices.",
+      "Attend mandatory training sessions if required.",
+      "Receive confirmation and scheduled assistance delivery."
+    ]
+  }
+]
