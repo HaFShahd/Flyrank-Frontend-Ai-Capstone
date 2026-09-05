@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { test, vi, expect } from 'vitest'
 import SettingsFormPrecise from './SettingsFormPrecise'
 
@@ -21,8 +21,8 @@ test('shows validation errors and submits valid data', async () => {
 
   fireEvent.click(screen.getByRole('button', { name: /save settings/i }))
 
-  // onSave should be called with data
-  expect(onSave).toHaveBeenCalled()
+  // onSave should be called with data (wait for async resolver)
+  await waitFor(() => expect(onSave).toHaveBeenCalled())
   const calledWith = onSave.mock.calls[0][0]
   expect(calledWith.username).toBe('Alice')
   expect(calledWith.email).toBe('alice@example.com')
