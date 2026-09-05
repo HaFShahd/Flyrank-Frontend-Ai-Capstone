@@ -12,7 +12,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.0",
-    "zod": "^4.25.0",
+    "zod": "^4.0.0",
     "@hookform/resolvers": "^2.9.10"
   },
   "devDependencies": {
@@ -22,5 +22,12 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/jest-dom": "^6.0.0",
     "jsdom": "^22.0.0"
+  }
+  ,
+  "vitest": {
+    "environment": "jsdom",
+    "globals": true
+    ,
+    "setupFiles": ["src/setupTests.js"]
   }
 }
